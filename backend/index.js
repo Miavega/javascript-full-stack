@@ -1,4 +1,8 @@
-require('dotenv').config();
+if (process.env.NODE_ENV === 'development') {
+    require('dotenv').config();
+    console.log('Ambiente de:', process.env.NODE_ENV);
+}
+
 const express = require('express');
 const morgan = require('morgan');
 const multer = require('multer');

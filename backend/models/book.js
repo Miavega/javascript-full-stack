@@ -1,13 +1,14 @@
 const {
-    Schema
+    Schema,
+    model
 } = require('mongoose');
 
-const BookSchema new Schema({
+const BookSchema = new Schema({
     title: {
         type: String,
         required: true
     },
-    autor: {
+    author: {
         type: String,
         required: true
     },
@@ -17,7 +18,7 @@ const BookSchema new Schema({
     },
     imgPath: {
         type: String,
-        required: true
+        required: false
     },
     created_at: {
         type: Date,
