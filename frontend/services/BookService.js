@@ -22,13 +22,13 @@ class BookService {
     async deleteBook(bookId) {
         const res = await fetch(`${this.URI}/${bookId}`, {
             headers: {
-                'Content-Type': 'applications/json'
+                'Content-Type': 'application/json',
             },
-            method: 'DELETE'
+            method: 'Delete'
         });
         const data = await res.json();
         console.log(data);
-    }
+}
 
 }
 
