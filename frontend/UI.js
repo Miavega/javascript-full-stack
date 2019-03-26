@@ -12,11 +12,12 @@ class UI {
         books.forEach((book) => {
             const div = document.createElement('div');
             div.className = 'animated fadeInRight';
+            // Reemplazar en modo local <img src="http://localhost:3000${book.imgPath}" class="img-fluid" alt="">
             div.innerHTML = `
             <div class="card m-2">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="http://localhost:3000${book.imgPath}" class="img-fluid" alt="">
+                        <img src="${book.imgPath}" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-block px-2">

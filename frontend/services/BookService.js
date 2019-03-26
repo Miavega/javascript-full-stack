@@ -1,7 +1,8 @@
 class BookService {
 
     constructor() {
-        this.URI = 'http://localhost:3000/api/books';
+        // En modo local this.URI = 'http://localhost:3000/api/books';
+        this.URI = '/api/books';
     }
 
     async getBooks() {
@@ -28,7 +29,7 @@ class BookService {
         });
         const data = await res.json();
         console.log(data);
-}
+    }
 
 }
 
