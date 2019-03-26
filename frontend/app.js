@@ -34,7 +34,7 @@ document.getElementById('books-cards')
         if (e.target.classList.contains('delete')) {
             const ui = new UI();
             ui.deleteBook(e.target.getAttribute('_id'));
-            ui.renderMessage('Libro agregrado', 'danger', 2000);
+            ui.renderMessage('Libro eliminado', 'danger', 2000);
         }
         e.preventDefault();
     });
